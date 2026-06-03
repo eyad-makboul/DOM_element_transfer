@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3</title>
+    <style>
+        body{
+            background-color: rgb(227, 227, 227);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        section{
+            display: flex;
+            box-sizing: border-box;
+            height: auto;
+        }
+        .Paper{
+            margin: 10px;
+            padding: 6px;
+            background-color: rgb(255, 255, 255);
+            width: 200px;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+            border: 1px solid rgb(240, 239, 239);
+        }
+         .Paper:hover{
+            margin: 10px;
+            padding: 6px;
+            background-color: rgb(248, 248, 248);
+            width: 201px;
+            height: 251px;
+          
+            border: 1px solid rgb(190, 190, 190);
+        }
+         .Paper :hover{
+    
+            background-color: rgb(242, 240, 240);
+            border: 1px solid rgb(190, 190, 190);
+        }
+
+        #buttons{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        p{
+            background-color: rgb(206, 206, 206);
+            box-shadow: 0 5px 15px rgba(0,0,0,.2);
+            border-radius: 5px;
+            padding: 5px;
+            margin: 3px;
+        }
+
+    </style>
+</head>
+<body>
+     <h2>Move Elements Between Boxes</h2>
+    <section>
+       
+        <div id="avaliable" class="Paper">
+            <h5>Avaliable</h5>
+            <p id="react">React</p>
+            <p id="j.s">JavaScript</p>
+            <p id="html">HTML</p>
+            <p id="css">CSS</p>
+        </div>
+        <div id="buttons">
+        <input type="button" value="&#8594; Move">
+        <input type="button" value="&#8592; Back">
+        </div>
+        <div id="selected" class="Paper">
+            <h5>Selected</h5>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
